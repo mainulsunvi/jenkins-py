@@ -1,9 +1,16 @@
 pipeline {
+<<<<<<< HEAD
 	agent { 
 		node {
 			label 'docker-agent-python3'
 			}
 	  }
+=======
+	agent {
+		label 'docker-agent-python'
+	}
+	
+>>>>>>> d11c6b611aad57b0d5db995350f5ff4666d50eef
 	stages {
 		stage('Build') {
 			steps {
