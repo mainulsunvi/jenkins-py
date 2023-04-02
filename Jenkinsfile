@@ -1,5 +1,4 @@
 pipeline {
-<<<<<<< HEAD
 	agent { 
 		node {
 			label 'docker-agent-python'
