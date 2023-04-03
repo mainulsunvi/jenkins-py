@@ -4,6 +4,9 @@ pipeline {
 			label 'docker-agent-python'
 		}
 	}
+	triggers {
+		pollSCM '*/2 * * * *'
+	}
 	stages {
 		stage('Build') {
 			steps {
@@ -28,6 +31,15 @@ pipeline {
 				echo 'Deliver....'
 				sh '''
 				python3 hello.py
+				
+				'''
+			}
+		}
+		stage('Nothing') {
+			steps {
+				echo 'Deliver....'
+				sh '''
+				echo "Hello World"
 				
 				'''
 			}
