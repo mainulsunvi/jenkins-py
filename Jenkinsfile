@@ -35,14 +35,5 @@ pipeline {
 				'''
 			}
 		}
-		stage('Nothing') {
-			steps {
-				echo 'Deliver....'
-				sh '''
-				echo "Hello World"
-				
-				'''
-			}
-		}
 	}
 }
