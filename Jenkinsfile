@@ -30,7 +30,7 @@ pipeline {
 			steps {
 				echo 'Deliver....'
 				sh '''
-				python3 hello.py
+				python3 hello1.py
 				
 				'''
 			}
